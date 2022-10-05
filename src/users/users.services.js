@@ -17,9 +17,9 @@ const getOneUser = (req, res) => {
 }
 
 const createUser = () => {
-    const { id, first_name, last_name, email, password, birthday } = req.body
-        if( id, first_name, last_name, email, password, birthday ){
-            const data = createNewUser(id, first_name, last_name, email, password, birthday)
+    const { id, first_name, last_name, email, password } = req.body
+        if( id, first_name, last_name, email, password){
+            const data = createNewUser(id, first_name, last_name, email, password)
             res.status(200).json(data)
         } else {
             res.status(404).json({message: 'Missing users'})

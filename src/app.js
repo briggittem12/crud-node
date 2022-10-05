@@ -9,12 +9,12 @@ app.use(express.json())
 
 
 app.get('/', (res, req) => {
-    res.status(200).json({message: 'hi'})
+    res.status(200).json({message: 'OK'})
 })
 
 app.use('/', usersRouter)
 
 
-app.listen(5000, () => {
-    console.log('server startet at port')
+app.listen(9000, () => {
+    console.log('server started at port 9000')
 })

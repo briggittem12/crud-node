@@ -21,7 +21,7 @@ const getUsernamesId = (id) => {
     return users 
 }
 
-const createNewUser = ( id, first_name, last_name, email, password, birthday
+const createNewUser = ( id, first_name, last_name, email, password
  ) => {
     let newUser = {
         id: uuid.v4(),
@@ -29,7 +29,7 @@ const createNewUser = ( id, first_name, last_name, email, password, birthday
         last_name,
         email,
         password,
-        birthday
+        birthday: 'YYYY/MM/DD'
     }
 
     register.push(newUser)
